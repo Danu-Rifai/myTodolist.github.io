@@ -1,0 +1,46 @@
+@media ( max-width: 425px) {
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stats-numbers {
+        margin-top: -30px;
+    }
+
+    .task p {
+        width: 150px;
+    }
+}
+
+@media ( max-width: 385px ) {
+    .icons img {
+        gap: 0;
+        margin: 0 0 0 10px;
+    }
+}
+
+@media ( min-width: 485px ) {
+    .task p {
+        width: 250px;
+    }
+}
+
+@media ( max-width: 355px ) {
+    .taskItem {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .icons{
+        align-items: center;
+        justify-content: center;
+    }
+}

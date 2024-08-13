@@ -1,0 +1,181 @@
+:root {
+    --backgound: #000430;
+    --secondaryBackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
+
+.resetMode {
+    margin-top: 20px;
+    display: flex;;
+    align-items: center;
+    gap: .5em;
+}
+
+label {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+label input {
+    position: absolute;
+    opacity: 0;
+    transition: .1s;
+}
+
+label:hover {
+    transform: scale(1.15);
+}
+
+.sun {
+    position: absolute;
+    font-size: 1.2em;
+    color: var(--purple);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+input:checked~.sun {
+    transition-delay: .8s;
+    transform: scale(1) rotate(360deg);
+}
+
+.moon {
+    font-size: 1.2em;
+    color: var(--purple);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transition: 1s ease;
+    transition-delay: .8s;
+}
+
+input:checked~.moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0)
+}
+
+.toogle {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: var(--secondaryBackground);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 1s;
+}
+
+input:checked~.toogle{
+    background: var(--text);
+}
+
+/* giving light and dark mode  */
+
+body.light-mode {
+    background-color: #f7fcff;
+}
+
+body.light-mode .stats-container {
+    color: #242529;
+    border: 2px solid #0791FA;
+}
+
+body.light-mode #progress {
+    background-color: #00DDFA;
+}
+
+body.light-mode button#resetTasks {
+    background-color: #0791FA;
+}
+
+body.light-mode button#resetTasks:hover {
+    background-color: #0483e4;
+}
+
+body.light-mode .moon,.sun {
+    color: #0791FA;
+}
+
+body.light-mode #numbers {
+    background-color: #0791FA;
+}
+
+body.light-mode input#taskInput {
+    border: 1px solid #0791FA;
+    background-color: #e9eff3;
+}
+
+body.light-mode button#newTask {
+    background-color: #0791FA;
+}
+    
+body.light-mode p#numbers {
+    color: #fff;
+}
+
+body.light-mode input {
+    color: #242529;
+}
+
+body.light-mode .taskItem {
+    background-color: #e9eff3;
+    color: #242529;
+}
+
+body.light-mode .task p {
+    color: #242529;
+}
+
+body.light-mode #progressBar {
+    background-color: #e9eff3;
+}
+
+body.light-mode .pinned {
+    border: 1px solid #0791FA;
+}
+
+body.light-mode .checkbox:checked {
+    background-color: #00DDFA;
+}
+
+body.light-mode .completed p {
+    color: #00DDFA;
+}
+
+body.light-mode .taskItem .icons img.edit {
+    content: url('stylesh/img/editLightmode.png');
+}
+
+body.light-mode .taskItem .icons img.pin {
+    content: url('stylesh/img/pinLightmode.png');
+}
+
+body.light-mode .editIcon .dark {
+    transform: scale(0);
+}
+
+body.light-mode .pinIcon .dark {
+    transform: scale(0);
+}
+
+body.light-mode .editIcon .light {
+    transform: scale(1);
+}
+
+body.light-mode .pinIcon .light {
+    transform: scale(1);
+}
+
+body.light-mode .editing {
+    border: 1px solid #0791FA;
+}
+
+body.light-mode .taskItem img:hover {
+    transform: scale(1.15);
+}

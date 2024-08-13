@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesh/style.css">
+    <link rel="stylesheet" href="stylesh/responsive.css">
+    <link rel="stylesheet" href="stylesh/mode.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="stats-container">
+            <div class="detail">
+                <div class="clock" id="clock"></div>
+                <h1>To-do List</h1>
+                <p>Rencanakan harimu sekarang!</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+                <div class="resetMode">
+                    <button id="resetTasks" type="button">Reset</button>
+                    <label>
+                        <input type="checkbox" id="theme-toggle">
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <span class="toggle"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+
+        <form action="" id="formAction">
+            <input type="text" id="taskInput" placeholder="Rencanakan harimu">
+            <button id="newTask" type="submit">+</button>
+        </form>
+
+        <ul id="task-list"></ul>
+
+        <button id="exportTasks">Export to <img src="stylesh/img/excel.png" alt="" srcset=""></i></button>
+
+    </div>
+
+    <!-- <img src="stylesh/img/pinLightmode.png" alt="" srcset="">
+    <img src="stylesh/img/editLightmode.png" alt="" srcset=""> -->
+
+
+<script src="stylesh/app.js"></script>
+<script src="stylesh/mode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="stylesh/notif.js"></script>
+<script src="stylesh/export.js"></script>
+</body>
+</html>
