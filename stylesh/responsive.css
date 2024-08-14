@@ -18,6 +18,11 @@
     .task p {
         width: 150px;
     }
+
+    button.newTask {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media ( max-width: 385px ) {
@@ -42,5 +47,16 @@
     .icons{
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media ( max-width: 345px ) {
+    button#newTask {
+        width: 50px;
+        height: 50px;
+    }
+
+    input#taskInput {
+        width: 5%;
     }
 }
